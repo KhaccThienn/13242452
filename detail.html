@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Details</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="icon" href="/data/imgbin_eagle-logo-png.png">
+    <link rel="stylesheet" href="/Product-Gallery-Image-Zoom/css/main.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.0.0-web/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/v2.3.2/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="/css/details.css">
+</head>
+
+<body>
+    <div class="header row justify-content-around p-2 navbar-dark bg-dark align-items-center m-0 shadow-lg">
+        <div class="header-center row align-items-center justify-content-between">
+            <div class="navbar-left">
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="index.html">Home </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="logo-main">
+                <img src="/data/logo zonex.png" alt="" class="card-img p-3">
+            </div>
+            <div class="navbar-right">
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <main class="main container mt-5">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="" href="data/p-1.jpg">
+                    <img src="data/p-1.jpg" id="show-img" class="card-img"> 
+                </div>
+                <div class="small-img d-flex justify-content-between align-items-center">
+                    <img src="Product-Gallery-Image-Zoom/images/online_icon_right@2x.png" class="icon-left text-dark card-img" alt="" id="prev-img">
+                    <div class="small-container ml-5">
+                        <div id="small-img-roll">
+                            <img src="data/1.jpg" class="show-small-img card-img" alt="">
+                            <img src="data/2.jpg" class="show-small-img card-img" alt="">
+                            <img src="data/3.jpg" class="show-small-img card-img" alt="">
+                            <img src="data/4.jpg" class="show-small-img card-img" alt="">
+                            <img src="data/5.jpg" class="show-small-img card-img" alt="">
+                        </div>
+                    </div>
+                    <img src="Product-Gallery-Image-Zoom/images/online_icon_right@2x.png" class="icon-right" alt="" id="next-img">
+                </div>
+            </div>
+            
+            <div class="col-lg-6 p-4">
+                <div class="rating-by-shop d-flex align-items-center">
+                    <i class="fa-solid fa-star-of-david p-2"></i> <span>Best Seller</span>
+                </div>
+                <div class="prod-name mt-1">
+                    <h1><strong>Nike Air Force</strong></h1>
+                </div>
+                <div class="rating-by-cus d-flex justify-content-between align-items-center">
+                    <div class="small-ratings"> <i class="fa fa-star rating-color"></i> <i class="fa fa-star rating-color"></i> <i
+                            class="fa fa-star rating-color"></i> <i class="fa fa-star rating-color"></i> <i
+                            class="fa fa-star rating-color  "></i> 
+                    </div>
+                    <span class="opa">2 customer reviewer</span>
+                </div>
+                <div class="cost mt-5 d-flex justify-content-between w-50 align-items-center">
+                    <h1> $ 128,00 </h1> <h3 class="opa"><del>$ 165,00</del></h3>
+                </div>
+                <div class="about-product">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis earum laboriosam in eligendi! Rerum neque animi quaerat, facilis repudiandae consequatur fugiat possimus ut natus in vitae dignissimos expedita aliquid!
+                </div>
+                <div class="mt-3 chooseSize row justify-content-around align-items-center w-75">
+                    <div class="choose-header">
+                        <strong>Choose The Size</strong>
+                    </div>
+                    <div class='size-picker'>
+                        <div class='range-picker' id='range-picker'>
+                            <div class='active'>44</div>
+                            <div>46</div>
+                            <div>48</div>
+                            <div>50</div>
+                            <div>52</div>
+                            <div>54</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="count-header text-center mt-4">
+                    <strong>Choose Your Qty</strong>
+                </div>
+                <div class="mt-3 container w-100 row justify-content-between" id="counting">
+
+                    <button onclick="tru()" class="btn btn-light w-25">-</button>
+                    <input type="text" id="sl" value="1" class="text-center w-50">
+                    <button onclick="cong()" class="btn btn-light w-25">+</button>
+
+                </div>
+                <div class="mt-3 add-to-card">
+                    <button class="btn btn-secondary w-100 p-3"><i class="fas fa-cart-plus pr-2"></i>Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar-default mt-5">
+            <div class="nav-bar w-50 container">
+                <ul class="d-flex justify-content-between align-items-center">
+                    <li class="list-unstyled active"><a href="" class="">Description</a></li>
+                    <li class="list-unstyled "><a href="" class="">Additional Information</a></li>
+                    <li class="list-unstyled "><a href="" class="">Review(2)</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container w-75 p-3">
+            <p class="pb-3 font-weight-bold h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. A doloremque et nisi cupiditate fugit similique placeat vitae
+            possimus, ad cum distinctio maiores animi consequatur facilis quisquam, eius explicabo delectus dignissimos!</p>
+            <p class="font-weight-bold h5">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+            ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+            adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+        </div>
+
+        <div class="related mt-4 container">
+            <div class="display-4 mb-3">
+                Related Product
+            </div>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="data/1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="data/1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="data/1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="data/1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                                content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="transpage container mt-5">
+            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                <div class="btn-group mr-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-secondary">1</button>
+                    <button type="button" class="btn btn-secondary">2</button>
+                    <button type="button" class="btn btn-secondary">3</button>
+                    <button type="button" class="btn btn-secondary">4</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/v2.3.2/jquery.min.js"></script>
+    <script src="/Product-Gallery-Image-Zoom/scripts/zoom-image.js"></script>
+    <script src="/Product-Gallery-Image-Zoom/scripts/main.js"></script>
+    <script src="/js/details-main.js"></script>
+</body>
+
+</html>
